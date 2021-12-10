@@ -1,5 +1,5 @@
-import { App } from 'aws-cdk-lib';
-import { CdkWorkshopStack } from '../lib/cdk-workshop-stack';
+import * as cdk from 'aws-cdk-lib';
+import { WorkshopPipelineStack } from '../lib/pipeline-stack';
 
-const app = new App();
-new CdkWorkshopStack(app, 'CdkWorkshop');
+const app = new cdk.App();
+new WorkshopPipelineStack(app, 'CdkWorkshopPipelineStack');
